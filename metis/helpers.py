@@ -25,7 +25,7 @@ def get_average_pnbi(dataset):
     return (np.mean(a[flattop_start:flattop_end]), np.std(a[flattop_start:flattop_end]))
 
 def plot2axis(y1,y1label,x,xlabel,
-              y2,y2label,legend1="lower center",legend2="center right"):
+              y2,y2label,title,legend1="lower center",legend2="center right"):
     ax1 = plt.subplot()
     plt.errorbar(x[:,0],y1[:,0],y1[:,1],x[:,1],fmt='o',label=y1label)
     plt.xlabel(xlabel)
@@ -35,6 +35,7 @@ def plot2axis(y1,y1label,x,xlabel,
     plt.ylabel(y2label)
     ax1.legend(loc=legend1)
     ax2.legend(loc=legend2)
+    plt.title(title)
     plt.show()
 
 def getAvg(rangee,keys,folder):
