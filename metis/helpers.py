@@ -38,6 +38,19 @@ def plot2axis(y1,y1label,x,xlabel,
     plt.title(title)
     plt.show()
 
+def plot2axis2(y1,y1label,x,xlabel,
+              y2,y2label,title,legend1="lower center",legend2="center right"):
+    ax1 = plt.subplot()
+    plt.errorbar(x[:,0],y1[:,0],y1[:,1],x[:,1],fmt='o',label=y1label)
+    plt.xlabel(xlabel)
+    plt.ylabel(y1label)
+    ax2 = ax1.twinx()
+    ax2.errorbar(x[:,0],y2[:,0],y2[:,1],x[:,1],fmt='o',label=y2label,color="green")
+    plt.ylabel(y2label)
+    ax1.legend(loc=legend1)
+    ax2.legend(loc=legend2)
+    plt.title(title)
+
 def getAvg(rangee,keys,folder):
     avgData = np.zeros((len(keys),len(rangee),2))
     for i in rangee:
