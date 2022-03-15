@@ -5,4 +5,4 @@ File overview:
 - <TT>report.pdf</TT>: Report on methods & results
 - <TT>plots</TT>: not important (plots for report)
 <br>
-Note that <TT>data<TT> is used in notebooks but not present here due to large file sizes. Thus notebooks don't work when forked.
+Note that <TT>data</TT> is used in notebooks but not present here due to large file sizes. Thus notebooks don't work when forked.

@@ -1,3 +1,3 @@
 ## Folders:
-- metis: Analyis & Results of METIS experiment
-- ts: Analyis & Results of Thomson scattering
+- <TT>metis</TT>: Analyis & Results of METIS experiment
+- <TT>ts</TT>: Analyis & Results of Thomson scattering
